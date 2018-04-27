@@ -9,7 +9,7 @@ class Api {
   DatabaseHelper db = new DatabaseHelper();
   Future<int> getUserID(String username) async {
     var user = await db.getUser(username);
-    if(user != null){
+    if (user != null) {
       return user.id;
     }
     final String response = await networkUtil
@@ -41,12 +41,12 @@ class Api {
     return null;
   }
 
-  Future<List<User>> getRecentlyUsers() async{
+  Future<List<User>> getRecentlyUsers() async {
     var resp = await db.getRecentlyUsers(10);
     return resp;
   }
 
-  Future<int> deleteUser(User user) async{
+  Future<int> deleteUser(User user) async {
     return await db.deleteUser(user);
   }
 }

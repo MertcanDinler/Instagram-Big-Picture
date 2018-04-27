@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
     var path = settings.name.split("/");
     if (path[1] == "picture") {
       return new MaterialPageRoute(
-          builder: (BuildContext context) => new PicturePage(fullName: path[2], url: path[3]),
+          builder: (BuildContext context) =>
+              new PicturePage(fullName: path[2], url: path[3]),
           settings: settings);
     }
     return null;

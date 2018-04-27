@@ -30,36 +30,5 @@ class UserWidget extends StatelessWidget {
         ],
       ),
     );
-    /*return new Container(
-        margin: const EdgeInsets.symmetric(vertical: 10.0),
-        child: new Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            new Container(
-              margin: const EdgeInsets.only(right: 16.0),
-              child: new CircleAvatar(child: new Image.network(user.smallPicture)),
-            ),
-            new Expanded(
-              child: new Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  new Text(user.username, style: Theme.of(context).textTheme.subhead),
-                  new Container(
-                    margin: const EdgeInsets.only(top: 5.0),
-                    child: new Text(user.fullName),
-                  )
-                ],
-              ),
-            ),
-            new Container(
-              child: new IconButton(
-                icon: new Icon(Icons.close, color: Colors.red),
-                tooltip: "Delete",
-                onPressed: (){},
-              ),
-            ),
-          ],
-        ),
-    );*/
   }
 }
